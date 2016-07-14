@@ -162,7 +162,7 @@ for(i in 1:(max.order+1)){
     AIC.matrix[i,j] <- AIC(currentArima) 
   }
 }
-
+#The best model is ARIMA model for minimum SSE
 best.model <- arima(x,order=c(1,0,3))
 install.packages("nlme")
 library(nlme)
